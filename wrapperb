@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+
+#read cmd
+s='{"a":"b"}'
+messagelen=${#s}
+echo $messagelen
+
+#echo $(${cmd})
+exit 0

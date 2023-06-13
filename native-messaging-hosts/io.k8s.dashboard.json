@@ -1,0 +1,7 @@
+{
+  "name": "io.k8s.dashboard",
+  "description": "Kubernetes dashboard.",
+  "path": "/Users/wenhao.du/kubernetes-dashboard-browser-extensions/wrapper",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://kknpamalehbodpcgfennnpiklobckadl/"]
+}

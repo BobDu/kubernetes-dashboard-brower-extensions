@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Kubernetes Dashboard Extensions",
+  "description": "Kubernetes dashboard extensions.",
+  "version": "0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "kubernetes-logo.png"
+  },
+  "icons": {
+    "138": "kubernetes-logo.png"
+  },
+  "permissions": [
+    "nativeMessaging"
+  ]
+}
