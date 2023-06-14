@@ -9,7 +9,7 @@ function sendNativeMessage() {
     appendMessage("Send:");
     chrome.runtime.sendNativeMessage(
         'io.k8s.dashboard',
-        {commend: 'aws eks get-token --region ap-east-1 --cluster-name dragonplus-eks-hk-01'},
+        {command: 'aws eks get-token --region ap-east-1 --cluster-name dragonplus-eks-hk-01'},
         function (response) {
             if (chrome.runtime.lastError) {
                 console.log(chrome.runtime.lastError);

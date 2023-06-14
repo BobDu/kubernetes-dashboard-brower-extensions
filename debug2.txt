@@ -1,0 +1,1 @@
+aws eks get-token --region ap-east-1 --cluster-name dragonplus-eks-hk-01

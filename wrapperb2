@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-
-#PATH=/usr/local/bin:$PATH
-
+#!/bin/bash
 # Loop forever, to deal with chrome.runtime.connectNative
 # xxxx{"command": ""}
 n=0
@@ -28,15 +25,7 @@ done
 
 echo ${cmd} > debug2.txt
 
-#env > r.txt 2>&1
-message=$(${cmd} 2>&1)
-#aws eks get-token --region ap-east-1 --cluster-name dragonplus-eks-hk-01 > r.txt 2>&1
-RC=$?
-echo ${RC} > debugRC.txt
-if [ ${RC} -ne 0 ] ; then
-    errmsg=$(echo ${message} | base64)
-    message="{\"errmsg\": \"${errmsg}\"}"
-fi
+message=$(>&2 ${cmd} 2>&1)
 
 #echo $? > d.txt
 
