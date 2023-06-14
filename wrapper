@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:$PATH
 
 # Loop forever, to deal with chrome.runtime.connectNative
 # xxxx{"command": ""}
